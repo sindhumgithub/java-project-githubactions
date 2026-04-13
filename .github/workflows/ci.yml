@@ -27,7 +27,7 @@ jobs:
       run: ./gradlew build
 
     - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v4
+      uses: docker/login-action@v3
       with:
         image: muddanadevops/java-project
         registry: docker.io
